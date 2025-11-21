@@ -1,6 +1,7 @@
 package com.rayen.miniprojet.controllers;
 
 import com.rayen.miniprojet.agents.AIAgent;
+
 import com.rayen.miniprojet.services.CsvService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -43,4 +44,11 @@ public class AIAgentController {
         // 3. Envoyer à l'agent
         return agent.chat(fullPrompt);
     }
+    
+    
+    @GetMapping("/test-rag")
+    public String testRag(@RequestParam String query) {
+        return agent.testRag(query);
+    }
+    
 }

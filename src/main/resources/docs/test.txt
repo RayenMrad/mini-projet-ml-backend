@@ -1,0 +1,2 @@
+Le coefficient de sécurité est 1.2 pour le calcul du seuil.
+Le délai standard est 30 jours.
